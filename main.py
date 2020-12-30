@@ -1,13 +1,13 @@
 from PIL import Image, ImageDraw, ImageFont
 
-font_size = 10
+font_size = 7
 text = "新年快乐"
 img_path = "1.jpg"
 
 img_raw = Image.open(img_path)
 img_array = img_raw.load()
 
-img_new = Image.new("RGB", img_raw.size, (10, 10, 10))
+img_new = Image.new("RGB", img_raw.size, (50, 50, 50))
 draw = ImageDraw.Draw(img_new)
 font = ImageFont.truetype('C:/Windows/fonts/Dengl.ttf', font_size)
 
